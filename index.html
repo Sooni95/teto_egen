@@ -1,49 +1,23 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>테토/에겐 테스트</title>
   <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      background: #f6f6f6;
-      padding: 2rem;
-      max-width: 600px;
-      margin: auto;
-    }
-    h1, h2 {
-      text-align: center;
-    }
-    .question {
-      margin-bottom: 2rem;
-    }
-    .options button {
-      display: block;
-      width: 100%;
-      margin: 0.5rem 0;
-      padding: 1rem;
-      font-size: 1rem;
-      border: none;
-      background-color: #e0e0e0;
-      border-radius: 8px;
-      cursor: pointer;
-    }
-    .options button:hover {
-      background-color: #d0d0d0;
-    }
-    .result {
-      text-align: center;
-      font-size: 1.2rem;
-    }
+    body { font-family: Arial, sans-serif; background: #f6f6f6; padding:2rem; max-width:600px; margin:auto; }
+    h1,h2 { text-align:center;}
+    .question { margin-bottom:2rem;}
+    .options button { display:block; width:100%; margin:0.5rem 0; padding:1rem; font-size:1rem; border:none; background:#e0e0e0; border-radius:8px; cursor:pointer; }
+    .options button:hover { background:#d0d0d0;}
+    .result { text-align:center; font-size:1.2rem; }
   </style>
 </head>
 <body>
   <h1>🐾 테토/에겐 테스트</h1>
   <div id="app"></div>
-
   <script>
-    document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener("DOMContentLoaded", function(){
       const questions = [
         {
           question: "📞 친구가 늦은 밤 전화를 걸어왔다면?",
@@ -114,131 +88,30 @@
             { text: "최선을 다해 이야기해준다", type: "teto" },
             { text: "귀찮아서 대충 듣는다", type: "egen" }
           ]
-        },
-        {
-          question: "💡 단체 회식에서 조용한 동료가 있다면?",
-          options: [
-            { text: "같이 이야기하도록 유도한다", type: "teto" },
-            { text: "그냥 조용히 내버려둔다", type: "egen" }
-          ]
-        },
-        {
-          question: "☔️ 비 오는 날 우산 없이 걷는 사람을 보면?",
-          options: [
-            { text: "내 우산 함께 쓰자고 제안한다", type: "teto" },
-            { text: "나도 젖기 싫어 모른 척 한다", type: "egen" }
-          ]
-        },
-        {
-          question: "🚗 누군가 주차 실수로 내 차를 긁었다면?",
-          options: [
-            { text: "괜찮다며 크게 화내지 않는다", type: "teto" },
-            { text: "무조건 CCTV부터 확인한다", type: "egen" }
-          ]
-        },
-        {
-          question: "😞 친구가 힘들다는 말을 꺼냈을 때?",
-          options: [
-            { text: "듣기만이라도 해주고 싶다", type: "teto" },
-            { text: "내 일도 바빠서 여유가 없다", type: "egen" }
-          ]
-        },
-        {
-          question: "🎈아이를 돌보는 상황이 생긴다면?",
-          options: [
-            { text: "책 읽어주고 놀아주는 게 즐겁다", type: "teto" },
-            { text: "부담되고 피곤하다", type: "egen" }
-          ]
-        },
-        {
-          question: "🎧 이어폰을 안 챙겼을 때 친구가 나눠준다며?",
-          options: [
-            { text: "고맙다며 함께 듣는다", type: "teto" },
-            { text: "거절하고 혼자 있는 걸 택한다", type: "egen" }
-          ]
-        },
-        {
-          question: "🏥 누군가 병원에 입원했다는 소식을 들으면?",
-          options: [
-            { text: "문자라도 안부를 꼭 보낸다", type: "teto" },
-            { text: "가까운 사이 아니면 무시한다", type: "egen" }
-          ]
-        },
-        {
-          question: "🎤 회의나 발표에서 조용한 동료에게 발언 기회가 주어졌을 때?",
-          options: [
-            { text: "응원하거나 리액션을 해준다", type: "teto" },
-            { text: "내 일 아니니 신경 안 쓴다", type: "egen" }
-          ]
-        },
-        {
-          question: "📱 단체 톡방에서 아무도 답장 없을 때?",
-          options: [
-            { text: "분위기 띄우려고 먼저 답장한다", type: "teto" },
-            { text: "나도 그냥 조용히 있는다", type: "egen" }
-          ]
-        },
-        {
-          question: "📚 누군가 공부나 업무를 도와달라고 부탁한다면?",
-          options: [
-            { text: "도와줄 수 있으면 최대한 도와준다", type: "teto" },
-            { text: "내 것도 바빠서 거절한다", type: "egen" }
-          ]
         }
       ];
 
-      let current = 0;
-      let scores = { teto: 0, egen: 0 };
+      let current = 0, scores = { teto:0, egen:0 };
       const app = document.getElementById("app");
-
-      function renderQuestion() {
+      function renderQuestion(){
         const q = questions[current];
-        app.innerHTML = `
-          <div class="question">
-            <h2>Q${current + 1}. ${q.question}</h2>
-            <div class="options">
-              ${q.options
-                .map(
-                  (opt, i) =>
-                    `<button onclick="handleAnswer('${opt.type}')">${opt.text}</button>`
-                )
-                .join("")}
-            </div>
-          </div>
-        `;
+        app.innerHTML = '<div class="question"><h2>Q'+(current+1)+'. '+q.question+'</h2><div class="options">'+ 
+          q.options.map(opt=>'<button onclick="handleAnswer(\''+opt.type+'\')">'+opt.text+'</button>').join('') +
+        '</div></div>';
       }
-
-      window.handleAnswer = function (type) {
-        scores[type]++;
-        current++;
-        if (current < questions.length) {
-          renderQuestion();
-        } else {
-          showResult();
-        }
+      window.handleAnswer = function(type){
+        scores[type]++; current++;
+        if(current<questions.length) renderQuestion();
+        else showResult();
       };
-
-      function showResult() {
-        const total = scores.teto + scores.egen;
-        const tetoPercent = Math.round((scores.teto / total) * 100);
-        const egenPercent = 100 - tetoPercent;
-
-        app.innerHTML = `
-          <div class="result">
-            <h2>🎯 결과</h2>
-            <p>🧸 테토: ${tetoPercent}%</p>
-            <p>🐺 에겐: ${egenPercent}%</p>
-            <p style="margin-top: 1rem;">
-              ${
-                tetoPercent > egenPercent
-                  ? "당신은 따뜻한 <strong>테토 타입</strong>이에요 🤍"
-                  : "당신은 시크한 <strong>에겐 타입</strong>이에요 🖤"
-              }
-            </p>
-          </div>
-        `;
+      function showResult(){
+        const total = scores.teto+scores.egen;
+        const pt = total? Math.round(scores.teto/total*100):0;
+        const pe = 100-pt;
+        app.innerHTML = '<div class="result"><h2>🎯 결과</h2><p>🧸 테토: '+pt+'%</p><p>🐺 에겐: '+pe+'%</p><p style="margin-top:1rem;">'+
+          (pt>pe? '당신은 따뜻한 <strong>테토 타입</strong>이에요 🤍' : '당신은 시크한 <strong>에겐 타입</strong>이에요 🖤') +
+        '</p></div>';
       }
-
       renderQuestion();
     });
   </script>
