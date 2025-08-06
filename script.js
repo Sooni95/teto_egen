@@ -13,8 +13,133 @@ document.addEventListener("DOMContentLoaded", function () {
         { text: "가볍게 인사한다", type: "teto" },
         { text: "휴대폰을 본 척하며 조용히 있는다", type: "egen" }
       ]
+    },
+    {
+      question: "🎂 친구 생일을 깜빡했을 때?",
+      options: [
+        { text: "미안하다며 바로 연락하고 챙긴다", type: "teto" },
+        { text: "다음에 만나면 말하려고 한다", type: "egen" }
+      ]
+    },
+    {
+      question: "🍽 밥 먹고 나서 설거지는?",
+      options: [
+        { text: "내가 먹은 건 내가 치운다", type: "teto" },
+        { text: "다음 사람이나 기계가 하겠지~", type: "egen" }
+      ]
+    },
+    {
+      question: "🙃 낯선 사람이 길을 물으면?",
+      options: [
+        { text: "친절히 알려주고, 모르면 같이 찾아본다", type: "teto" },
+        { text: "모른다고 하고 그냥 지나간다", type: "egen" }
+      ]
+    },
+    {
+      question: "🛏 친구가 우리 집에서 자고 가고 싶다고 한다면?",
+      options: [
+        { text: "편하게 자라고 이불 꺼내준다", type: "teto" },
+        { text: "어색해서 핑계 대고 거절한다", type: "egen" }
+      ]
+    },
+    {
+      question: "👔 회사나 학교에서 동료가 실수했을 때?",
+      options: [
+        { text: "나서서 도와준다", type: "teto" },
+        { text: "조용히 넘기고 거리를 둔다", type: "egen" }
+      ]
+    },
+    {
+      question: "🐶 길에서 아픈 강아지를 봤을 때?",
+      options: [
+        { text: "근처 동물병원이나 보호소에 문의한다", type: "teto" },
+        { text: "불쌍하다고 생각만 하고 지나친다", type: "egen" }
+      ]
+    },
+    {
+      question: "🎁 누군가가 예상치 못한 선물을 줬을 때?",
+      options: [
+        { text: "감사 인사하고 다음에 나도 챙긴다", type: "teto" },
+        { text: "고맙긴 한데 부담스럽다", type: "egen" }
+      ]
+    },
+    {
+      question: "🗣 누가 나에게 조언을 구하면?",
+      options: [
+        { text: "최선을 다해 이야기해준다", type: "teto" },
+        { text: "귀찮아서 대충 듣는다", type: "egen" }
+      ]
+    },
+    {
+      question: "💡 단체 회식에서 조용한 동료가 있다면?",
+      options: [
+        { text: "같이 이야기하도록 유도한다", type: "teto" },
+        { text: "그냥 조용히 내버려둔다", type: "egen" }
+      ]
+    },
+    {
+      question: "☔️ 비 오는 날 우산 없이 걷는 사람을 보면?",
+      options: [
+        { text: "내 우산 함께 쓰자고 제안한다", type: "teto" },
+        { text: "나도 젖기 싫어 모른 척 한다", type: "egen" }
+      ]
+    },
+    {
+      question: "🚗 누군가 주차 실수로 내 차를 긁었다면?",
+      options: [
+        { text: "괜찮다며 크게 화내지 않는다", type: "teto" },
+        { text: "무조건 CCTV부터 확인한다", type: "egen" }
+      ]
+    },
+    {
+      question: "😞 친구가 힘들다는 말을 꺼냈을 때?",
+      options: [
+        { text: "듣기만이라도 해주고 싶다", type: "teto" },
+        { text: "내 일도 바빠서 여유가 없다", type: "egen" }
+      ]
+    },
+    {
+      question: "🎈아이를 돌보는 상황이 생긴다면?",
+      options: [
+        { text: "책 읽어주고 놀아주는 게 즐겁다", type: "teto" },
+        { text: "부담되고 피곤하다", type: "egen" }
+      ]
+    },
+    {
+      question: "🎧 이어폰을 안 챙겼을 때 친구가 나눠준다며?",
+      options: [
+        { text: "고맙다며 함께 듣는다", type: "teto" },
+        { text: "거절하고 혼자 있는 걸 택한다", type: "egen" }
+      ]
+    },
+    {
+      question: "🏥 누군가 병원에 입원했다는 소식을 들으면?",
+      options: [
+        { text: "문자라도 안부를 꼭 보낸다", type: "teto" },
+        { text: "가까운 사이 아니면 무시한다", type: "egen" }
+      ]
+    },
+    {
+      question: "🎤 발표에서 조용한 동료가 발언 기회를 얻었다면?",
+      options: [
+        { text: "응원하거나 리액션을 해준다", type: "teto" },
+        { text: "내 일 아니니 신경 안 쓴다", type: "egen" }
+      ]
+    },
+    {
+      question: "📱 단체 톡방에서 아무도 답장 없을 때?",
+      options: [
+        { text: "분위기 띄우려고 먼저 답장한다", type: "teto" },
+        { text: "나도 그냥 조용히 있는다", type: "egen" }
+      ]
+    },
+    {
+      question: "📚 누군가 공부나 업무를 도와달라고 부탁한다면?",
+      options: [
+        { text: "도와줄 수 있으면 최대한 도와준다", type: "teto" },
+        { text: "내 것도 바빠서 거절한다", type: "egen" }
+      ]
     }
-    // 전체 질문 이어서 작성 가능
   ];
 
   let current = 0;
